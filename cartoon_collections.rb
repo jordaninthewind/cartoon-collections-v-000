@@ -17,9 +17,8 @@ def find_the_cheese(array)
   array.map do |el|
     if cheese_types.find(el)
       return el
-    else
-      nil
     end
+    nil
   end
   # if empty, returns nil
 end
