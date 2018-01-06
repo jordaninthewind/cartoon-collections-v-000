@@ -18,7 +18,7 @@ def find_the_cheese(array)
     if cheese_types.find(el)
       return el
     end
-    nil
   end
+  return nil
   # if empty, returns nil
 end
