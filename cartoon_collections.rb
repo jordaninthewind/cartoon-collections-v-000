@@ -16,6 +16,6 @@ def find_the_cheese(array)
   if array.length == 0
     return nil
   else
-    array.map { |el| cheese_types.include?(el) }
+    array.map { |el| return el if cheese_types.include?(el) }
   end
 end
