@@ -13,7 +13,12 @@ end
 
 def find_the_cheese(array)
   cheese_types = ["cheddar", "gouda", "camembert"]
-  array.map do | el |
-    cheese_types.find(el)
-  end
+  # returns the first element of array that is cheese
+  array.map do |el|
+    if cheese_types.find(el)
+      return el
+    else
+      nil
+    end
+  # if empty, returns nil
 end
